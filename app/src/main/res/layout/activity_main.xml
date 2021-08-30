@@ -25,15 +25,17 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"
-        android:fontFamily="@font/arima_madurai_thin"
+        android:fontFamily="@font/archivo_black"
         android:text="Índice de Massa Corporal"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textFontWeight="@integer/material_motion_duration_short_2"
+        android:textSize="28sp"
         android:textStyle="bold"
 
 
         />
     <EditText
+        android:id="@+id/edit_peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -43,10 +45,14 @@
         android:padding="15dp"
         android:layout_marginBottom="25dp"
         android:fontFamily="sans-serif"
-        android:textColorHint="#92FFFFFF"
+        android:textColorHint="#D5FFFFFF"
         android:inputType="number"
+        android:drawableStart="@drawable/arrows_24"
+        android:drawableTint="@color/white"
+        android:drawablePadding="16dp"
         />
     <EditText
+        android:id="@+id/edit_altura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -56,11 +62,15 @@
         android:padding="15dp"
         android:layout_marginBottom="25dp"
         android:fontFamily="sans-serif"
-        android:textColorHint="#92FFFFFF"
+        android:textColorHint="#D5FFFFFF"
         android:inputType="numberDecimal"
+        android:drawableStart="@drawable/baseline_height_24"
+        android:drawableTint="@color/white"
+        android:drawablePadding="16dp"
         />
 
     <Button
+        android:id="@+id/button_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button_background"
@@ -73,12 +83,17 @@
         android:layout_marginBottom="50dp"
         />
     <TextView
+        android:id="@+id/text_view_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10.0"
         android:layout_gravity="center"
+        android:gravity="center"
         android:textSize="90sp"
+        android:padding="10dp"
         android:fontFamily="@font/baloo"
+        android:background="@drawable/button_resultado_background"
+        android:textColor="@color/white"
 
         />
 
